@@ -98,3 +98,30 @@ Documentation: Used Gemini to structure and ensure the completeness of this `REA
 ### Reflection on AI Impact:
 
 AI significantly streamlined the workflow in three key areas: complex query construction, cross-cutting UI/logic concerns (like role-based rendering), and aesthetic detailing. By outsourcing boilerplate code and CSS refinement to Gemini, I was able to dedicate more time to securing the API endpoints and validating the core purchasing business logic, leading to a faster development cycle and a high-quality final product.
+
+## 🧪 Testing and Quality Assurance (TDD Report)
+
+The backend API was developed using a Test-Driven Development (TDD) approach, ensuring that all implemented features meet functional requirements and security standards.
+
+### 🚀 Test Execution Summary
+
+| Metric | Value |
+| :--- | :--- |
+| Test Suites | 2 Passed |
+| Total Tests | 11 Passed |
+| Status | All Tests Passing (GREEN) |
+| Time | 2.1 s |
+
+### 📊 Jest Code Coverage Report
+
+The coverage report shows the percentage of lines, statements, and functions covered by the implemented tests.
+
+| File | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **All files** | **66.66** | **53.42** | **76.47** | **67.72** | |
+| src/controllers/authController.js | 77.27 | 76.47 | 100 | 77.27 | 10,34,42,47,59 |
+| src/controllers/sweetController.js | 41.02 | 38.23 | 71.42 | 42.1 | 8,13,27-28,37-38,59,64-66,73-74,85,90-91,100,104-150 |
+| src/middleware/auth.js | 83.33 | 87.5 | 100 | 83.33 | 20,25-26 |
+| src/middleware/isAdmin.js | 75 | 75 | 100 | 75 | 5 |
+
+
